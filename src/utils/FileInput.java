@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class FileInput {
-    public static List readFile(String path) throws FileNotFoundException {
+    public static ArrayList<String> readFile(String path) throws FileNotFoundException {
         File file = new File(path);
         ArrayList<String> input = new ArrayList<>();
         Scanner scanner = new Scanner(file);
