@@ -13,8 +13,8 @@ public class Calculator {
     public static long operation(String row) {
         System.out.println(row);
         String[] rowArray = row.trim().split("\\s+");
-        System.out.println(Arrays.toString(rowArray));
-        System.out.println(rowArray.length);
+        //System.out.println(Arrays.toString(rowArray));
+        //System.out.println(rowArray.length);
         long sum=0;
         //add
         if (rowArray[rowArray.length-1].equals("+")){
@@ -30,7 +30,7 @@ public class Calculator {
                 sum *= Integer.parseInt(rowArray[i]);
             }
         }
-        System.out.println(row+" "+sum);
+        //System.out.println(row+" "+sum);
         return sum;
     }
 }
