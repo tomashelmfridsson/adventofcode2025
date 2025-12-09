@@ -1,4 +1,4 @@
-package dayX;
+package utils.dayX;
 
 import utils.FileInput;
 
