@@ -56,7 +56,9 @@ public class Day8 {
                 Double key = e.getKey();
                 Junction[] jArr = e.getValue();
                 Junction A = jArr[0];
+                System.out.println(Arrays.toString(A.getPosition()));
                 Junction B = jArr[1];
+                System.out.println(Arrays.toString(B.getPosition()));
                 if (A.circuit ==0 && B.circuit ==0){
                     A.circuit = circuitNumber;
                     B.circuit = circuitNumber;
@@ -76,6 +78,7 @@ public class Day8 {
         for (Junction j: junctions){
             int c = j.getCircuit();
             if (c!=0) circuits[c-1] = circuits[c-1] +1;
+            System.out.println(j.allInfo());
         }
         System.out.println(Arrays.toString(circuits));
 

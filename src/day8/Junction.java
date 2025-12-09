@@ -22,5 +22,9 @@ public class Junction {
         return new int[]{x, y, z};
     }
 
+    public String allInfo(){
+        return x+","+y+","+z+" "+circuit+" "+number;
+    }
+
 }
 
