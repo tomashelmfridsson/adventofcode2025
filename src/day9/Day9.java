@@ -23,19 +23,14 @@ public class Day9 {
             tiles.add(new Tile(x, y));
         }
         System.out.println(tiles);
-        System.out.println(tiles.size());
-        System.out.println(tiles.size()*tiles.size());
         // Leta efter max
         long max = 0;
-        int i=0;
         for (Tile tileA : tiles) {
             for (Tile tileB : tiles) {
                 long area = Logik.area(tileA, tileB);
                 if (area > max) max = area;
-                i++;
             }
         }
-        System.out.println(i);
         System.out.println("Max area " + max);
 
     }
