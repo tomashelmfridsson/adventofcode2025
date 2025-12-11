@@ -8,8 +8,8 @@ import java.util.ArrayList;
 public class Day9 {
 
     public static void main(String[] args) throws FileNotFoundException {
-//        String path = "src/day9/demo.txt"; // 50
-        String path = "src/day9/input.txt";  //
+        String path = "src/day9/demo.txt"; // 50
+//        String path = "src/day9/input.txt";  //
 
         ArrayList<String> input = FileInput.readFile(path);
         System.out.println(input);
@@ -27,6 +27,8 @@ public class Day9 {
         // Part 1 Leta efter max
         long max = Logik.maxArea(tiles);
         System.out.println("Max area " + max);
+
+        // Part 2
 
     }
 }
